@@ -1,5 +1,4 @@
-
-<div >
+<div>
   @for (item of [
   { title: 'Explore the Docs', link: 'https://angular.dev' },
   { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
@@ -8,28 +7,28 @@
   { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
   ]; track item.title) {
   <a class="pill" [href]="item.link" target="_blank" rel="noopener">
-    <span>{{ item.title }}</span>
+    <span>{{ item.title }}<br /></span>
 
   </a>
   }
 </div>
-<main class="main">
-  <div class="content">
+<main>
+  <div>
 
-    
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
+
+    <div></div>
+    <div>
 
 
     </div>
   </div>
   <div>
-  <app-types-of-data-binding></app-types-of-data-binding>
-  <app-structural-directives></app-structural-directives>
-  <app-code-test-example></app-code-test-example>
+    <app-types-of-data-binding></app-types-of-data-binding>
+    <app-structural-directives></app-structural-directives>
+    <app-code-test-example></app-code-test-example>
   </div>
 </main>
 
 
 
-<router-outlet />
+<router-outlet></router-outlet>
