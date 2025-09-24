@@ -1,0 +1,33 @@
+<hr />
+
+<H2> ✨ Types of Data Binding ✨</H2>
+<hr />
+<h3>✏️Example of String Interpolation ( Bind data from component to html template or view)</h3>
+<p>{{firstName}} {{lastName}}</p>
+<hr />
+<h3>✏️Example of Property Binding it us used to bind the property of HTML element like src, alt, href,innertext . we
+    inclose it in [] ( Bind data from component to html template or view)</h3>
+<img [src]="myImageUrl" [alt]="MyImageAlt" width="100">
+<hr />
+<h3>✏️Event Binding also use for capture user movement like keystrokes, clicks , mouse movement( Bind data from
+    component to html template or view)</h3>
+
+
+<button (click)="onClickMe()">Click me!</button>
+<input type="text" (input)="passValueToComponent($event)" placeholder="Type here" />
+<p>{{message}}</p>
+<hr />
+<h3>✏️Two way Data Binding use [(ngModel)] also add FormsModule in inport section of app.module.ts ( Bind data from
+    component to html template or view and vice versa)</h3>
+<input type="text" [value]="defaultValue" (input)="changeDefaultValue($event)" placeholder="Enter your name" />
+<span>{{defaultValue}}</span> <br>
+<span> - OR - </span><br>
+<input type="text" [(ngModel)]="twoWayDataBinding" placeholder="Enter your name" />
+<span>{{twoWayDataBinding}}</span> <br>
+
+<hr />          
+<hr />
+<h3>☑️Task</h3>
+<p>Disable the button when the input field value not  nitin</p>
+<input type="text" [(ngModel)]="fullName" placeholder="Enter your name" />
+<button [disabled]="fullName !== 'nitin'">Submit</button>
