@@ -6,11 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './structural-directives.component.css',
 })
 export class StructuralDirectivesComponent {
+
+  isApprove = false;
+lucynumber = 0;
+  showContainer: boolean = true;
   showElement: boolean = true;
   items: string[] = ['Item 1', 'Item 2', 'Item 3'];
   selectedOption: string = 'option1';
   isLoggedIn: boolean = true;
-  showContainer: boolean = true;
+  
   itemCount: number = this.items.length;
 
   toggleContainer() {

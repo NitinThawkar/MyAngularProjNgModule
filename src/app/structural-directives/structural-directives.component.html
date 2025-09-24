@@ -22,6 +22,14 @@
 <p *ngIf="showElement">This paragraph is conditionally rendered based on the value of <strong>showElement</strong>
     property in the component.</p>
 <button (click)="toggleElement()">Toggle Element</button>
+
+<div style="background-color: lightgray; padding: 10px; margin-top: 10px;">
+    <button class="btn btn-success" (click)="isApprove = true">success</button><span> </span>
+    <button class="btn btn-danger" (click)="isApprove = false">fail</button>
+
+    <p *ngIf="isApprove">your application has been approved</p>
+    <p *ngIf="!isApprove">your application has been rejected</p>
+</div>
 <hr>
 <h3>✏️ngFor directive</h3>
 <ul>
@@ -36,12 +44,30 @@
     <p *ngSwitchCase="'option1'">You selected Option 1</p>
     <p *ngSwitchCase="'option2'">You selected Option 2</p>
     <p *ngSwitchDefault>Please select an option</p>
+
+
 </div>
 <select [(ngModel)]="selectedOption">
     <option value="">Select an option</option>
     <option value="option1">Option 1</option>
     <option value="option2">Option 2</option>
 </select>
+<div style="background-color: lightgray; padding: 10px; margin-top: 10px;">
+    <input type=number name="lucynumber" [(ngModel)]="lucynumber" min="0" />
+    <div>
+        <div [ngSwitch]="lucynumber">
+            <p *ngSwitchCase="1">You are lucky today 1</p>
+            <p *ngSwitchCase="2">You are lucky today 2</p>
+          
+            <p *ngSwitchCase="4">You are lucky today 4</p>
+            <p *ngSwitchCase="5">You are lucky today 5</p>
+         
+            <p *ngSwitchCase="7">You are lucky today 7</p>
+            <p *ngSwitchCase="13">You are unlucky today!</p>
+            <p *ngSwitchDefault>Have a nice day!</p>
+        </div>
+    </div>
+</div>
 <hr>
 <h3>✏️ngTemplate directive</h3>
 <div *ngIf="isLoggedIn; else loginTemplate">

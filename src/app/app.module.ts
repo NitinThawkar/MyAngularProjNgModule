@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { TypesOfDataBindingComponent } from './types-of-data-binding/types-of-data-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { CodeTestExampleComponent } from './code-test-example/code-test-example.component';
+import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CodeTestExampleComponent } from './code-test-example/code-test-example.
     HomeComponent,
     TypesOfDataBindingComponent,
     StructuralDirectivesComponent,
-    CodeTestExampleComponent
+    CodeTestExampleComponent,
+    AttributeDirectivesComponent
   ],
   imports: [
     BrowserModule,
