@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'MyAngularProjNgModule';
-  myname :string ="Nitin T";
-
-  isVisible : boolean = true;
-  txtValue : string = "Hello";
-
-  helloAlert(){
-    alert(this.txtValue);
-  }
+  
 }

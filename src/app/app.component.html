@@ -165,7 +165,7 @@
     }
   }
 </style>
-<div class="pill-group">
+<div >
   @for (item of [
   { title: 'Explore the Docs', link: 'https://angular.dev' },
   { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
@@ -182,19 +182,7 @@
 <main class="main">
   <div class="content">
 
-    <div class="left-side">
-
-      <h3>Hello, {{ title }}</h3>
-      <h3>my name is {{myname}}</h3>
-      <p>Congratulations! Your app is running. 🎉</p>
-
-      <input type="text" [(ngModel)]="myname" hplaceholder="Enter your name" /><br>
-      <input id="mytxt" [hidden]="isVisible" value="Hello" [hidden]="!isVisible" />
-      <button (click)="isVisible = !isVisible">Toggle</button>
-      <button (click)="helloAlert()">Alert Massage</button>
-      <hr>
-
-    </div>
+    
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
 
@@ -203,6 +191,8 @@
   </div>
   <div>
   <app-types-of-data-binding></app-types-of-data-binding>
+  <app-structural-directives></app-structural-directives>
+  <app-code-test-example></app-code-test-example>
   </div>
 </main>
 

@@ -1,0 +1,17 @@
+
+<hr/>
+<hr/>
+<p>code-test-example works!</p>
+<div >
+
+      <h3>Hello, {{ title }}</h3>
+      <h3>my name is {{myname}}</h3>
+      <p>Congratulations! Your app is running. 🎉</p>
+
+      <input type="text" [(ngModel)]="myname" hplaceholder="Enter your name" /><br>
+      <input id="mytxt" [hidden]="isVisible" value="Hello" [hidden]="!isVisible" />
+      <button (click)="isVisible = !isVisible">Toggle</button>
+      <button (click)="helloAlert()">Alert Massage</button>
+      <hr>
+
+    </div>

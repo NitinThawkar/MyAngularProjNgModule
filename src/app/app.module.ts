@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TypesOfDataBindingComponent } from './types-of-data-binding/types-of-data-binding.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { CodeTestExampleComponent } from './code-test-example/code-test-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TypesOfDataBindingComponent
+    TypesOfDataBindingComponent,
+    StructuralDirectivesComponent,
+    CodeTestExampleComponent
   ],
   imports: [
     BrowserModule,
