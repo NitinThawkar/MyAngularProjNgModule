@@ -1,4 +1,6 @@
 <div>
   <h1>Child Component</h1>
   <p>Please subscribe to {{ channelName }}</p>
+
+  <input type="text" (input)="sendMessageToParent($event)" placeholder="Enter channel name">
 </div>

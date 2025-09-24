@@ -1,6 +1,7 @@
 <div>
-  <h1>Parent Component</h1>
-  <label for="channelInput">Channel Name:</label>
-  <input id="channelInput" type="text" [(ngModel)]="channelNameInParent" placeholder="Enter channel name"> <br><br>
-  <app-child [channelName]="channelNameInParent"></app-child>
+    <h1>Parent Component</h1>
+    <label for="channelInput">Channel Name:</label>
+    <input id="channelInput" type="text" [(ngModel)]="channelNameInParent" placeholder="Enter channel name"> <br><br>
+    <p>Message from Child: {{ messageFromChild }}</p>
+    <app-child [channelName]="channelNameInParent" (sendMessageEmitter)="reciveMsgFrmChild ($event) "></app-child>
 </div>

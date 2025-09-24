@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   channelNameInParent = 'nitin  News';
-}
+  messageFromChild = '';
+
+
+  reciveMsgFrmChild(msg: any) {
+    console.log("Message received from child component: " + msg);
+    //this.channelNameInParent = msg;
+    this.messageFromChild = msg;
+  }
+} 
 
