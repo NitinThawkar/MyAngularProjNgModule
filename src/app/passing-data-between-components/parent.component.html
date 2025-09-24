@@ -1,1 +1,6 @@
-<p>parent works!</p>
+<div>
+  <h1>Parent Component</h1>
+  <label for="channelInput">Channel Name:</label>
+  <input id="channelInput" type="text" [(ngModel)]="channelNameInParent" placeholder="Enter channel name"> <br><br>
+  <app-child [channelName]="channelNameInParent"></app-child>
+</div>
