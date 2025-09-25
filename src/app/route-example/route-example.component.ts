@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-route-example',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './route-example.component.css'
 })
 export class RouteExampleComponent {
-
+  constructor(private router: Router) {}
+  
+  navigateToDataBinding() {
+    setTimeout(() => {
+      console.log("navigating to data binding");
+      this.router.navigate(['/databinding']);
+    }, 200);
+  }
 }

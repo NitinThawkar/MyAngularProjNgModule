@@ -8,6 +8,7 @@ import { ParentComponent } from './passing-data-between-components/parent.compon
 import { TemplateReferenceVariableAndViewchildComponent } from './template-reference-variable-and-viewchild/template-reference-variable-and-viewchild.component';
 import { CodeTestExampleComponent } from './code-test-example/code-test-example.component';
 import { SharedServiceExampleComponent } from './shared-service-example/shared-service-example/shared-service-example.component';
+import { RouteExampleComponent } from './route-example/route-example.component';
 
 const routes: Routes = [
   {
@@ -43,11 +44,15 @@ const routes: Routes = [
     component: SharedServiceExampleComponent,
   },
   {
+    path: 'route-example',
+    component: RouteExampleComponent,
+  },
+  {
     path: 'code-test-example',
     component: CodeTestExampleComponent,
   }
 ];
-
+//route-example
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
