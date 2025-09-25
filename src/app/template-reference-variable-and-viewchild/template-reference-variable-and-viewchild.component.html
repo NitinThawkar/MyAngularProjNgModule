@@ -1,1 +1,11 @@
 <p>template-reference-variable-and-viewchild works!</p>
+<p #myParagraph>template-reference-variable  </p>
+<h3> use viewchild if you want to some dom action before loding .like focus </h3>
+<input  type="text" placeholder="Enter some text" #myinputElement>
+<button (click)="sendInput(myinputElement,myParagraph)">Click</button>
+<button [disabled] = "myinputElement.innerText.length === 0 ">Clear</button>
+
+<br>
+
+
+
