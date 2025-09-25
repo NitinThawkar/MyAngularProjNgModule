@@ -13,6 +13,8 @@ import { ChildComponent } from './passing-data-between-components/child.componen
 import { FirstComponent } from './shared-service-example/first/first.component';
 import { SecondComponent } from './shared-service-example/second/second.component';
 import { TemplateReferenceVariableAndViewchildComponent } from './template-reference-variable-and-viewchild/template-reference-variable-and-viewchild.component';
+import { HeaderNavBarComponent } from './header-nav-bar/header-nav-bar.component';
+import { SharedServiceExampleComponent } from './shared-service-example/shared-service-example/shared-service-example.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TemplateReferenceVariableAndViewchildComponent } from './template-refer
     ChildComponent,
     FirstComponent,
     SecondComponent,
-    TemplateReferenceVariableAndViewchildComponent
+    TemplateReferenceVariableAndViewchildComponent,
+    HeaderNavBarComponent,
+    SharedServiceExampleComponent
   ],
   imports: [
     BrowserModule,
