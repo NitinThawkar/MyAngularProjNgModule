@@ -10,7 +10,7 @@ export class ParentComponent {
   channelNameInParent = 'nitin  News';
   messageFromChild = '';
 
-
+  // 4. Method to receive message from child component
   reciveMsgFrmChild(msg: any) {
     console.log("Message received from child component: " + msg);
     //this.channelNameInParent = msg;
