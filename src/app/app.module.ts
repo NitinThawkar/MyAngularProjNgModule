@@ -15,6 +15,10 @@ import { SecondComponent } from './shared-service-example/second/second.componen
 import { TemplateReferenceVariableAndViewchildComponent } from './template-reference-variable-and-viewchild/template-reference-variable-and-viewchild.component';
 import { HeaderNavBarComponent } from './header-nav-bar/header-nav-bar.component';
 import { SharedServiceExampleComponent } from './shared-service-example/shared-service-example/shared-service-example.component';
+import { RouteExampleComponent } from './route-example/route-example.component';
+import { AppleComponent } from './route-product-pages/apple/apple.component';
+import { BananaComponent } from './route-product-pages/banana/banana.component';
+import { OrangeComponent } from './route-product-pages/orange/orange.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { SharedServiceExampleComponent } from './shared-service-example/shared-s
     SecondComponent,
     TemplateReferenceVariableAndViewchildComponent,
     HeaderNavBarComponent,
-    SharedServiceExampleComponent
+    SharedServiceExampleComponent,
+    RouteExampleComponent,
+    AppleComponent,
+    BananaComponent,
+    OrangeComponent
   ],
   imports: [
     BrowserModule,
