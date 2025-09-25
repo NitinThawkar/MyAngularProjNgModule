@@ -10,6 +10,8 @@ import { CodeTestExampleComponent } from './code-test-example/code-test-example.
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { ParentComponent } from './passing-data-between-components/parent.component';
 import { ChildComponent } from './passing-data-between-components/child.component';
+import { FirstComponent } from './shared-service-example/first/first.component';
+import { SecondComponent } from './shared-service-example/second/second.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ChildComponent } from './passing-data-between-components/child.componen
     CodeTestExampleComponent,
     AttributeDirectivesComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
