@@ -12,6 +12,7 @@ import { ParentComponent } from './passing-data-between-components/parent.compon
 import { ChildComponent } from './passing-data-between-components/child.component';
 import { FirstComponent } from './shared-service-example/first/first.component';
 import { SecondComponent } from './shared-service-example/second/second.component';
+import { TemplateReferenceVariableAndViewchildComponent } from './template-reference-variable-and-viewchild/template-reference-variable-and-viewchild.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SecondComponent } from './shared-service-example/second/second.componen
     ParentComponent,
     ChildComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    TemplateReferenceVariableAndViewchildComponent
   ],
   imports: [
     BrowserModule,
