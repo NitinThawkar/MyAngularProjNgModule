@@ -20,6 +20,9 @@ import { AppleComponent } from './route-product-pages/apple/apple.component';
 import { BananaComponent } from './route-product-pages/banana/banana.component';
 import { OrangeComponent } from './route-product-pages/orange/orange.component';
 import { ProductComponent } from './route-product-pages/product/product.component';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+import { ReactiveModelDrivenFormsComponent } from './reactive-model-driven-forms/reactive-model-driven-forms.component';
+import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { ProductComponent } from './route-product-pages/product/product.componen
     AppleComponent,
     BananaComponent,
     OrangeComponent,
-    ProductComponent
+    ProductComponent,
+    TemplateDrivenFormsComponent,
+    ReactiveModelDrivenFormsComponent,
+    AngularFormsComponent
   ],
   imports: [
     BrowserModule,
