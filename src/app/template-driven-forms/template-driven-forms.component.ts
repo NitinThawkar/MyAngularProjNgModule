@@ -16,6 +16,7 @@ export class TemplateDrivenFormsComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(form: NgForm) {
+    console.log('Form object:', form);
     console.log('Form submitted:', form.value);
     form.reset();
   }
