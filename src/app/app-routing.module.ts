@@ -9,6 +9,7 @@ import { TemplateReferenceVariableAndViewchildComponent } from './template-refer
 import { CodeTestExampleComponent } from './code-test-example/code-test-example.component';
 import { SharedServiceExampleComponent } from './shared-service-example/shared-service-example/shared-service-example.component';
 import { RouteExampleComponent } from './route-example/route-example.component';
+import { ProductComponent } from './route-product-pages/product/product.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,22 @@ const routes: Routes = [
   {
     path: 'route-example',
     component: RouteExampleComponent,
+  },
+  {
+    path: 'route-example/product/:id',
+    component: ProductComponent,
+  },
+  {
+    path: 'route-example/product/apple',
+    component: ProductComponent,
+  },
+  {
+    path: 'route-example/product/orange',
+    component: ProductComponent,
+  },
+  {
+    path: 'route-example/product/banana',
+    component: ProductComponent,
   },
   {
     path: 'code-test-example',
