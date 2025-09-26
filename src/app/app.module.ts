@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -26,6 +27,7 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { CommonPagesComponent } from './common-pages/common-pages.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { InitialsPipe } from './initials.pipe';
+import { HttpWebCommunicationComponent } from './http-web-communication/http-web-communication.component';
 
 @NgModule({
   declarations: [
@@ -52,13 +54,15 @@ import { InitialsPipe } from './initials.pipe';
     AngularFormsComponent,
     CommonPagesComponent,
     PipesComponent,
-    InitialsPipe
+    InitialsPipe,
+    HttpWebCommunicationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
