@@ -13,6 +13,8 @@ import { ProductComponent } from './route-product-pages/product/product.componen
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 import { ReactiveModelDrivenFormsComponent } from './reactive-model-driven-forms/reactive-model-driven-forms.component';
+import { CommonPagesComponent } from './common-pages/common-pages.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,6 +33,8 @@ const routes: Routes = [
   { path: 'angular-forms', component: AngularFormsComponent },
   { path: 'template-driven', component: TemplateDrivenFormsComponent },
   { path: 'model-driven', component: ReactiveModelDrivenFormsComponent },
+  { path: 'common-pages', component: CommonPagesComponent },
+  { path: 'pipes', component: PipesComponent },
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;

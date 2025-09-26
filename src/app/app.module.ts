@@ -23,6 +23,8 @@ import { ProductComponent } from './route-product-pages/product/product.componen
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 import { ReactiveModelDrivenFormsComponent } from './reactive-model-driven-forms/reactive-model-driven-forms.component';
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
+import { CommonPagesComponent } from './common-pages/common-pages.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
     ProductComponent,
     TemplateDrivenFormsComponent,
     ReactiveModelDrivenFormsComponent,
-    AngularFormsComponent
+    AngularFormsComponent,
+    CommonPagesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
