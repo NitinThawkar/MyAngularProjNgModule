@@ -25,6 +25,7 @@ import { ReactiveModelDrivenFormsComponent } from './reactive-model-driven-forms
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { CommonPagesComponent } from './common-pages/common-pages.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { InitialsPipe } from './initials.pipe';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PipesComponent } from './pipes/pipes.component';
     ReactiveModelDrivenFormsComponent,
     AngularFormsComponent,
     CommonPagesComponent,
-    PipesComponent
+    PipesComponent,
+    InitialsPipe
   ],
   imports: [
     BrowserModule,

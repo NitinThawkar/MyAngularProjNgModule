@@ -10,5 +10,5 @@ export class PipesComponent {
   channelName = "WebTechTalk";
   mark = 0.8945;
   today = new Date();
-  name = "Surender Neelakantan";
+  name = "Nitin T";
 }
