@@ -1,0 +1,64 @@
+<hr>
+<hr>
+
+<H2> ✨attribute-directives ✨</H2>
+<p>attribute-directives works!</p>
+
+<span>Attribute Directives are used to change the appearance or behavior of an element, component, or another directive.
+    Commonly used attribute directives in Angular are ngClass, ngStyle, ngModel, ngModelGroup, ngForm, ngFormGroup,
+    ngFormControl, ngFormControlName etc.
+    <br>
+    Structural Directives - modify the DOM <br>
+    Attribute Directives - modify the properties of the DOM elements
+</span>
+
+<br>
+<div>
+    <p [ngClass]="{'bold': isBold, 'italic': isItalic}"
+        [ngStyle]="{
+            'font-size.px': fontSize,
+            'background-color': isHighlight ? highlightColor : 'transparent'
+        }">
+        This paragraph demonstrates ngClass with multiple CSS classes: highlight ({{isHighlight}}), bold ({{isBold}}), italic ({{isItalic}})
+    </p>
+    
+    <p [ngStyle]="{
+            'font-size.px': fontSize,
+            'color': highlightColor === 'red' ? 'red' : highlightColor === 'blue' ? 'blue' : highlightColor === 'green' ? 'green' : 'black'
+        }">
+        This paragraph changes color based on button clicks. Current color: {{highlightColor}}
+    </p>
+
+    <div style="margin-top: 20px;">
+        <button class="btn btn-secondary" (click)="toggleHighlight()">Toggle Highlight</button>
+        <button class="btn btn-warning" (click)="isBold = !isBold">Toggle Bold</button>
+        <button class="btn btn-info" (click)="isItalic = !isItalic">Toggle Italic</button>
+    </div>
+    
+    <div style="margin-top: 15px;">
+        <button class="btn btn-danger" (click)="highlight('red')">Red Color</button>
+        <button class="btn btn-primary" (click)="highlight('blue')">Blue Color</button>
+        <button class="btn btn-success" (click)="highlight('green')">Green Color</button>
+    </div>
+    
+    <div style="margin-top: 15px;">
+        <label>Font Size: </label>
+        <button class="btn btn-sm btn-outline-secondary" (click)="fontSize = fontSize - 2">-</button>
+        <span style="margin: 0 10px;">{{fontSize}}px</span>
+        <button class="btn btn-sm btn-outline-secondary" (click)="fontSize = fontSize + 2">+</button>
+    </div>
+
+    
+<div class="row">
+  <div class="col-md-12">
+    <p [ngStyle]="{
+      color: isStyleApplied === true ? 'white' : 'black',
+      backgroundColor: isStyleApplied === true ? 'green' : 'white'
+    }">Click the button to toggle the style!</p>
+  </div>
+  <div class="col-md-12">
+    <button class="btn btn-primary" (click)="toggleStyle()">Toggle Style</button>
+  </div>
+</div>
+
+</div>

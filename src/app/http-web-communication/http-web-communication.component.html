@@ -1,0 +1,28 @@
+<h1>Angular HTTP Demo</h1>
+<p>http-web-communication works!</p>
+<span>
+    This component demonstrates how to perform HTTP requests and handle web communication in Angular using the
+    HttpClient module.
+    It fetches user data from a public API and displays it in a list format. The component also includes error handling
+    and loading indicators.
+
+    <strong>import httpclient module in import section of app.module.ts</strong>
+</span>
+
+<div class="users" *ngIf="!isLoading">
+    <div class="user" *ngFor="let user of users">
+        <div class="user-img">
+            <img [src]="user.avatar_url" alt="" width="100" height="50" />
+        </div>
+        <div>
+            <div class="user-name">{{ user.login }}</div>
+            <div class="user-btn">
+                <button (click)="goToGithub(user.html_url)">
+                    Open Github
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader" *ngIf="isLoading">Loading...</div>

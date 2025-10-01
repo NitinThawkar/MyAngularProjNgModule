@@ -1,0 +1,6 @@
+<div>
+  <h1>Child Component</h1>
+  <p>Please subscribe to {{ channelName }}</p>
+<!-- 1. Input field to send message to parent component using sendMessageToParent function -->
+  <input type="text" (input)="sendMessageToParent($event)" placeholder="Send Message to Parent">
+</div>

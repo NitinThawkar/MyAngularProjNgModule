@@ -1,0 +1,45 @@
+/* CSS classes for ngClass demonstration */
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.blue-color {
+    color: blue;
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+/* Additional styling */
+p {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+button {
+    margin: 5px;
+}
+
+label {
+    font-weight: bold;
+}

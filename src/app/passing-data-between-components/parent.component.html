@@ -1,0 +1,9 @@
+<div>
+    <h1>Parent Component</h1>
+    <label for="channelInput">Channel Name:</label>
+    <input id="channelInput" type="text" [(ngModel)]="channelNameInParent" placeholder="Enter channel name"> <br><br>
+    <p>Message from Child: {{ messageFromChild }}</p>
+    <!-- 3. using child component's sendMessageEmitter we do event binding and send value to parent reciveMsgFrmChild function  -->
+     <!-- [channelName]="channelNameInParent" this is attribute binding ,channelName attribute of app-child component -->
+    <app-child [channelName]="channelNameInParent" (sendMessageEmitter)="reciveMsgFrmChild ($event) "></app-child>
+</div>
