@@ -16,6 +16,7 @@ import { ReactiveModelDrivenFormsComponent } from './reactive-model-driven-forms
 import { CommonPagesComponent } from './common-pages/common-pages.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpWebCommunicationComponent } from './http-web-communication/http-web-communication.component';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -37,6 +38,8 @@ const routes: Routes = [
   { path: 'common-pages', component: CommonPagesComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'web-communication', component: HttpWebCommunicationComponent },
+  { path: 'custom-directives', component: CustomDirectivesComponent },
+
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;

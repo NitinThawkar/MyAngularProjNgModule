@@ -28,6 +28,8 @@ import { CommonPagesComponent } from './common-pages/common-pages.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { InitialsPipe } from './initials.pipe';
 import { HttpWebCommunicationComponent } from './http-web-communication/http-web-communication.component';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { HttpWebCommunicationComponent } from './http-web-communication/http-web
     CommonPagesComponent,
     PipesComponent,
     InitialsPipe,
-    HttpWebCommunicationComponent
+    HttpWebCommunicationComponent,
+    CustomDirectivesComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<p>custom-directives works!</p>
+<span>number and divisibleBy properties are input to custom directive <br>
+ click on number.   if number is divisible by divisibleBy then the background color of the div will be changed to yellow
+</span>
+
+<b>
+    <div appHighlight [number]="number" [divisibleBy]="5"> current number {{number}}</div>
+</b>
+
+<button (click)="number = number + 1">Increment Number</button>
