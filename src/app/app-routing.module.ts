@@ -17,6 +17,8 @@ import { CommonPagesComponent } from './common-pages/common-pages.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpWebCommunicationComponent } from './http-web-communication/http-web-communication.component';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { PromisesComponent } from './promises/promises.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,7 +41,8 @@ const routes: Routes = [
   { path: 'pipes', component: PipesComponent },
   { path: 'web-communication', component: HttpWebCommunicationComponent },
   { path: 'custom-directives', component: CustomDirectivesComponent },
-
+  { path: 'promise', component: PromisesComponent },
+  { path: 'observables', component: ObservablesComponent },
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;

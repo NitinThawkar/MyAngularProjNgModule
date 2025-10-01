@@ -30,6 +30,8 @@ import { InitialsPipe } from './initials.pipe';
 import { HttpWebCommunicationComponent } from './http-web-communication/http-web-communication.component';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { HighlightDirective } from './highlight.directive';
+import { PromisesComponent } from './promises/promises.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { HighlightDirective } from './highlight.directive';
     InitialsPipe,
     HttpWebCommunicationComponent,
     CustomDirectivesComponent,
-    HighlightDirective
+    HighlightDirective,
+    PromisesComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
