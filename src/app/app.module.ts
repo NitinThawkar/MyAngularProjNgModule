@@ -33,6 +33,7 @@ import { HighlightDirective } from './highlight.directive';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
+import { ObservableVsSubjectComponent } from './observable-vs-subject/observable-vs-subject.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { ObservableVsPromiseComponent } from './observable-vs-promise/observable
     HighlightDirective,
     PromisesComponent,
     ObservablesComponent,
-    ObservableVsPromiseComponent
+    ObservableVsPromiseComponent,
+    ObservableVsSubjectComponent
   ],
   imports: [
     BrowserModule,

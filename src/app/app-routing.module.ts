@@ -20,6 +20,7 @@ import { CustomDirectivesComponent } from './custom-directives/custom-directives
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
+import { ObservableVsSubjectComponent } from './observable-vs-subject/observable-vs-subject.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'promise', component: PromisesComponent },
   { path: 'observables', component: ObservablesComponent },
   { path: 'observables-vs-promises', component: ObservableVsPromiseComponent },
+  { path: 'observables-vs-subjects', component: ObservableVsSubjectComponent },
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;

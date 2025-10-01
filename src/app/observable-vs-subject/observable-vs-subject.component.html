@@ -1,0 +1,62 @@
+<h2>observable-vs-subject</h2>
+<span>In Angular, both Observables and Subjects are used for handling asynchronous data streams, but they have different
+    use cases and behaviors.
+    <br>
+    Observables:
+    <ul>
+        <li>Observables are lazy collections of multiple values over time.</li>
+        <li>They are unicast, meaning each subscribed observer has its own execution.</li>
+        <li>They can be created using the Observable constructor or various creation operators like of(), from(),
+            interval(), etc.</li>
+        <li>Observers subscribe to an Observable to receive data, and they can also unsubscribe to stop receiving data.
+        </li>
+        <li>Observables support operators like map, filter, concat, merge, etc., to manipulate the data before it is
+            passed to the subscriber.</li>
+    </ul>
+
+    Subjects:
+    <ul>
+        <li>Subjects are a special type of Observable that allows values to be multicasted to multiple observers.</li>
+        <li>They are both an Observable and an Observer, meaning they can emit values as well as be subscribed to.</li>
+        <li>Subjects can be created using the Subject class from RxJS.</li>
+        <li>When a Subject emits a value, all its subscribers receive that value simultaneously.</li>
+        <li>Subjects are useful for scenarios where you want to share a single execution among multiple subscribers,
+            such as in event handling or state management.</li>
+    </ul>
+
+    In summary, use Observables when you need a unicast stream of data for each subscriber, and use Subjects when you
+    need to multicast data to multiple subscribers.
+
+    <br>
+    subject can be consumer and producer of data,
+    but observable is only producer of data
+    observable can be converted to subject using "multicast" operator
+    <br> <br>
+    see result in console
+
+    // Observable required extra setup observer variable to hold the subscription
+    // Subject does not require any extra setup
+</span>
+
+<div class="container">
+    <div class="btn-container">
+        <div class="section left">
+            <button class="btn btn-dark" (click)="getObservableData()">
+                Get Observable Data
+            </button>
+        </div>
+        <div class="section">
+            <button class="btn btn-dark" (click)="getSubjectData()">
+                Get Subject Data
+            </button>
+        </div>
+    </div>
+    <div class="text-container">
+        <div class="section left">
+            <div>{{ observableData1 }} | {{ observableData2 }}</div>
+        </div>
+        <div class="section">
+            <div>{{ subjectData1 }} | {{ subjectData2 }}</div>
+        </div>
+    </div>
+</div>
