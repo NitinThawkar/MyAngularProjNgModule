@@ -13,6 +13,7 @@ export class ObservablesComponent implements OnInit {
 
   constructor() {}
 
+  //next ,complete,error these are called when we emit values from observable
   ngOnInit(): void {
     this.myObservable = new Observable<number[]>((observer) => {
       setInterval(() => {
