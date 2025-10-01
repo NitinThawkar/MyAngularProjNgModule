@@ -19,6 +19,7 @@ import { HttpWebCommunicationComponent } from './http-web-communication/http-web
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'custom-directives', component: CustomDirectivesComponent },
   { path: 'promise', component: PromisesComponent },
   { path: 'observables', component: ObservablesComponent },
+  { path: 'observables-vs-promises', component: ObservableVsPromiseComponent },
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;

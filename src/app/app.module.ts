@@ -32,6 +32,7 @@ import { CustomDirectivesComponent } from './custom-directives/custom-directives
 import { HighlightDirective } from './highlight.directive';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ObservablesComponent } from './observables/observables.component';
     CustomDirectivesComponent,
     HighlightDirective,
     PromisesComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    ObservableVsPromiseComponent
   ],
   imports: [
     BrowserModule,
