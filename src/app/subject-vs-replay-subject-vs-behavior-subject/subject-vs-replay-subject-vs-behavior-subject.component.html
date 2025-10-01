@@ -1,0 +1,53 @@
+<h2>subject-vs-replay-subject-vs-behavior-subject</h2>
+<span>
+  In Angular, Subjects, ReplaySubjects, and BehaviorSubjects are all types of Observables provided by the RxJS library,
+  but they have different behaviors and use cases.
+  <br>
+  Subject:
+  <ul>
+    <li>A Subject is a multicast Observable that allows multiple observers to subscribe to it.</li>
+    <li>It does not hold any value. When a new observer subscribes, it will only receive future values emitted by the
+      Subject.</li>
+    <li>It is useful for scenarios where you want to share a single execution among multiple subscribers, such as in
+      event handling or state management.</li>
+  </ul>
+
+  ReplaySubject:
+  <ul>
+    <li>A ReplaySubject is a type of Subject that can "replay" or emit old values to new subscribers.</li>
+    <li>When a new observer subscribes, it will receive a specified number of previously emitted values (buffer size)
+      before receiving future values.</li>
+    <li>It is useful when you want new subscribers to receive some historical data upon subscription, such as in chat
+      applications or data streams where past values are relevant.</li>
+  </ul>
+
+  BehaviorSubject:
+  <ul>
+    <li>A BehaviorSubject is a type of Subject that requires an initial value and always holds the latest value emitted
+      to its subscribers.</li>
+    <li>When a new observer subscribes, it will immediately receive the most recent value, followed by any future values.
+    </li>
+    <li>It is useful for scenarios where you want to maintain and share a current state or value across multiple
+      components, such as in form controls or application settings.</li>
+  </ul>
+
+  In summary, use Subject when you need a simple multicast Observable without holding any value, ReplaySubject when you
+  want to replay past values to new subscribers, and BehaviorSubject when you need to maintain and share the latest
+  value with new subscribers.
+</span>
+<br> <br>
+<b>uncomment some code in .ts file to see the difference</b>
+<br> <br>
+<div class="container">
+  <div class="btn-container">
+    <div class="section">
+      <button class="btn btn-dark" (click)="emitData()">Emit Data</button>
+      <button class="btn btn-dark" (click)="getData()">Subscribe</button>
+    </div>
+  </div>
+  <div class="text-container">
+    <div class="section">
+      <div *ngFor="let data of myData">{{ data }}</div>
+    </div>
+  </div>
+</div>

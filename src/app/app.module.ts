@@ -34,6 +34,7 @@ import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 import { ObservableVsSubjectComponent } from './observable-vs-subject/observable-vs-subject.component';
+import { SubjectVsReplaySubjectVsBehaviorSubjectComponent } from './subject-vs-replay-subject-vs-behavior-subject/subject-vs-replay-subject-vs-behavior-subject.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { ObservableVsSubjectComponent } from './observable-vs-subject/observable
     PromisesComponent,
     ObservablesComponent,
     ObservableVsPromiseComponent,
-    ObservableVsSubjectComponent
+    ObservableVsSubjectComponent,
+    SubjectVsReplaySubjectVsBehaviorSubjectComponent
   ],
   imports: [
     BrowserModule,
