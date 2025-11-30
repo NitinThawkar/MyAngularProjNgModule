@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
+import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -35,6 +35,8 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 import { ObservableVsSubjectComponent } from './observable-vs-subject/observable-vs-subject.component';
 import { SubjectVsReplaySubjectVsBehaviorSubjectComponent } from './subject-vs-replay-subject-vs-behavior-subject/subject-vs-replay-subject-vs-behavior-subject.component';
+import { InterceptorTestComponent } from './interceptor-test/interceptor-test.component';
+import { TokenInterceptor } from './services/token.interceptor';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,8 @@ import { SubjectVsReplaySubjectVsBehaviorSubjectComponent } from './subject-vs-r
     ObservablesComponent,
     ObservableVsPromiseComponent,
     ObservableVsSubjectComponent,
-    SubjectVsReplaySubjectVsBehaviorSubjectComponent
+    SubjectVsReplaySubjectVsBehaviorSubjectComponent,
+    InterceptorTestComponent
   ],
   imports: [
     BrowserModule,
@@ -78,7 +81,13 @@ import { SubjectVsReplaySubjectVsBehaviorSubjectComponent } from './subject-vs-r
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+
+
+    {provide: HTTP_INTERCEPTORS,
+useClass: TokenInterceptor,
+multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { InterceptorTestComponent } from './interceptor-test.component';
+
+describe('InterceptorTestComponent', () => {
+  let component: InterceptorTestComponent;
+  let fixture: ComponentFixture<InterceptorTestComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [InterceptorTestComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(InterceptorTestComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

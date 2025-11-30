@@ -22,6 +22,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 import { ObservableVsSubjectComponent } from './observable-vs-subject/observable-vs-subject.component';
 import { SubjectVsReplaySubjectVsBehaviorSubjectComponent } from './subject-vs-replay-subject-vs-behavior-subject/subject-vs-replay-subject-vs-behavior-subject.component';
+import { InterceptorTestComponent } from './interceptor-test/interceptor-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'observables-vs-promises', component: ObservableVsPromiseComponent },
   { path: 'observables-vs-subjects', component: ObservableVsSubjectComponent },
   { path: 'subject-vs-replay-subject-vs-behavior-subject', component: SubjectVsReplaySubjectVsBehaviorSubjectComponent },
+  { path: 'interceptor-test', component: InterceptorTestComponent },
   { path: 'code-test-example', component: CodeTestExampleComponent }
 ]
 ;
